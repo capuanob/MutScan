@@ -1,0 +1,9 @@
+image: ghcr.io/capuanob/mutscan-fuzz:latest
+project: mutscan
+target: mutscan-fuzz
+tests:
+    - file://testdata
+
+cmds:
+  - cmd: /mutscan -1 @@
+    max_length: 10000
